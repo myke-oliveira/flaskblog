@@ -11,3 +11,6 @@
 ## Running the Application
 
 	flask run
+## Turning on the debug mode
+
+	export FLASK_DEBUG=1
