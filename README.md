@@ -14,3 +14,20 @@
 ## Turning on the debug mode
 
 	export FLASK_DEBUG=1
+
+## Trees
+
+### Flask Objects
+
+There are Flask, render_template, url_for in flask module.
+
+### Flask-wtf Objects
+
+	flask_wtf >>> FlaskForm
+	wtforms >>> StringField, PasswordField, SubmitField, BooleanField 
+				validators >>> DataRequired, Length, Email, EqualTo
+
+## How to Gerate Secrets Keys with Python
+
+	import secrets
+	secrets.token_hex(16)
