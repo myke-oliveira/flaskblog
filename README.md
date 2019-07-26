@@ -45,3 +45,10 @@ There are Flask, render_template, url_for in flask module.
 	{% else %}
 		<<!-- DO STUFF IF FALSE -->
 	{% endif %}
+
+## Query using SQLAlchemy
+
+	User.query.all()
+	User.query.filter_by(username='Myke').all()
+	User.query.first()
+	User.query.get(1)
