@@ -31,3 +31,17 @@ There are Flask, render_template, url_for in flask module.
 
 	import secrets
 	secrets.token_hex(16)
+
+## Getting flash messagem with jinja2
+
+	{% with messages = get_flashed_messages(with_categories=true) %}
+		<!-- DO STUFF -->
+	{% endwith %}
+
+## Checking if there is errors in a form validation with jinja2
+
+	{% if form.username.errors %}
+		<<!-- DO STUFF IF TRUE -->
+	{% else %}
+		<<!-- DO STUFF IF FALSE -->
+	{% endif %}
